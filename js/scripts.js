@@ -13,18 +13,37 @@ $(function (){
 });
 
 function copyFunction1() {
-    navigator.clipboard.writeText("3020642167271");
+    text = "3020642167271";
+    const elem = document.createElement('textarea');
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
     alert("계좌번호가 복사되었습니다");
 }
 
 function copyFunction2() {
-    navigator.clipboard.writeText("123458790");
+    text = "123458790";
+    const elem = document.createElement('textarea');
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+//    navigator.clipboard.writeText("123458790");
     alert("계좌번호가 복사되었습니다");
 }
 
 
 function copyFunction3() {
-    navigator.clipboard.writeText("123458790");
+    text = "3565917591703";
+    const elem = document.createElement('textarea');
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
     alert("계좌번호가 복사되었습니다");
 }
 
